@@ -23,8 +23,8 @@ All icons should be stored in the BC3 / DXT5 DDS format. This is an abbreviation
 The DDS format we use (BC3 / DXT5) is a compressed format for textures. This compression is not lossless and therefore it involves losing information while saving. It is therefore recommend you work on your icons in some other format, such as PNG, and convert them to the DDS format to preserve the original texture for editing. Using DXT5 has a limitation. Each block of 4x4 textures needs to have the same color and saturation in each pixel. If this is not the case, it will average it out during saving. This means that pixels in such a block can have different luminance (lighting, black / white) but they must be the same color (Hue) and saturation. This means you can't just make any icon and have it look good in-game. It requires a bit of trial-and-error to get a feeling for. We therefore recommend that you first experiment with what is possible, before making all your icons.
 
 A unit requires four states:
- - `over`: As an example - `icon_air_air_over.dds`
  - `rest`: As an example - `icon_air_air_rest.dds`
+ - `over`: As an example - `icon_air_air_over.dds`
  - `selected`: As an example - `icon_air_air_selected.dds`
  - `selectedover`: As an example - `icon_air_air_selectedover.dds`
 
