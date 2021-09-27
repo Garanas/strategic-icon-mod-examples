@@ -29,7 +29,7 @@ function ScriptedIconAssignments (units, projectiles, icons)
             -- check if we have the same identifier in our icon folder
             local partOfIconsMod = false 
             for k, icon in icons do 
-                if StringFind(icon, strategicIconName, 1) then 
+                if StringFind(icon, strategicIconName, 1, -10) then 
                     partOfIconsMod = true 
                     break
                 end
