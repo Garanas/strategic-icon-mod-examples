@@ -1,5 +1,7 @@
 # Custom Strategic Icons
 
+![](images/example-b.png)
+
 With the [latest patch](https://github.com/FAForever/fa/pull/3450) of Forged Alliance Forever it is possible for people to make their own strategic icon overlay and see the icons in-game. This new approach is slightly involved as we require certain functionality to work, such as being able to turn the ui mod off in the mod manager. This repository contains a simple guide as to how you can start making your own, using open source and commercial tools.
 
 Please use the example mods provided to help you get started for your own, personal use.
@@ -58,10 +60,10 @@ end
 ```
 
 It contains two definitions:
- - `IconAssignments` This is a manual approach to assigning icons to units. It requires a format such as `{ BlueprintId = "UAL0001", IconSet = aeon_commander }` where you have a corresponding icon set that starts with `aeon_commander` in the `custom-strategic-icons` folder. 
- - `ScriptedIconAssignments` This is a scripted approach to assigning icons to units. It should return the same format as the manual assignment. This is for advanced users. The arguments are deep copies of all unit and projectile blueprints. You can see an example of how to do this in the example icon overhaul mods of Brewlan.
+ - `IconAssignments`: This is a manual approach to assigning icons to units. It requires a format such as `{ BlueprintId = "UAL0001", IconSet = "aeon_commander" }` where you have a corresponding icon set that starts with `aeon_commander` in the `custom-strategic-icons` folder. 
+ - `ScriptedIconAssignments`: This is a scripted approach to assigning icons to units. It should return the same format as the manual assignment. This is for advanced users. The arguments are deep copies of all unit and projectile blueprints. You can see an example of how to do this in the example icon overhaul mods of Brewlan.
 
-A script is case-sensitive. This means you need to have your capitals straigth. The syntax is typical lua. This guide does not inform you how to write valid Lua code - you can find numerous resources through a search engine online.
+A script is case-sensitive. This means you need to have your capitals straight. The syntax is typical lua. This guide does not inform you how to write valid Lua code - you can find numerous resources through a search engine online.
 
 ## Tools to make icons with
 
