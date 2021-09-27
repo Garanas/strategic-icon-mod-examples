@@ -2,7 +2,17 @@
 
 With the [latest patch](https://github.com/FAForever/fa/pull/3450) of Forged Alliance Forever it is possible for people to make their own strategic icon overlay and see the icons in-game. This new approach is slightly involved as we require certain functionality to work, such as being able to turn the ui mod off in the mod manager. This repository contains a simple guide as to how you can start making your own, using open source and commercial tools.
 
-Please use the example mods provided to help you get started.
+Please use the example mods provided to help you get started for your own, personal use.
+
+## Distribution
+
+Please note the license of the example mods:
+ - BrewLAN UI Strategic Icon Overhaul Classic: The **icons** are distributed with the CC-BY-SA-NC 4.0 license. All rights reserved to Sean 'Balthazar' Wheeldon for the script.
+ - BrewLAN UI Strategic Icon Overhaul Large: All rights reserved to Sean 'Balthazar' Wheeldon.
+ - BrewLAN UI Strategic Icon Overhaul Small: All rights reserved to Sean 'Balthazar' Wheeldon.
+ - Backwards Compatible Icon Overhaul: All the code has the GPLv3 license, the four example icons belong to the author of ASI.
+
+Distributing adjusted icon packages through the vault is not permitted unless you have explicit authorisation by the right holder. You're free to use and adjust them for your own, personal use.
 
 ## About the format (Direct Draw Surface / DDS)
 
@@ -17,16 +27,6 @@ A unit requires four states:
  - `selectedover`, as an example: `icon_air_air_selectedover.dds`
 
 The game expects all four to be availabe or it will not show an icon when a given state is reached. In particular, use the `Backwards Compatible Icon Overhaul` mod if you want to convert your Advanced Strategic Icons (ASI) installation.
-
-## Distribution
-
-Please note the license of the example mods:
- - BrewLAN UI Strategic Icon Overhaul Classic: The **icons** are distributed with the CC-BY-SA-NC 4.0 license. All rights reserved to Sean 'Balthazar' Wheeldon for the script.
- - BrewLAN UI Strategic Icon Overhaul Large: All rights reserved to Sean 'Balthazar' Wheeldon.
- - BrewLAN UI Strategic Icon Overhaul Small: All rights reserved to Sean 'Balthazar' Wheeldon.
- - Backwards Compatible Icon Overhaul: All the code has the GPLv3 license, the four example icons belong to the author of ASI.
-
-Distributing adjusted icon packages through the vault is not permitted unless you have explicit authorisation by the right holder. You're free to use and adjust them for your own, personal use.
 
 ## About the custom-strategic-icons folder
 
