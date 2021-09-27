@@ -69,6 +69,7 @@ A script is case-sensitive. This means you need to have your capitals straight. 
 
 There are various tools out there that can help you make icons.
  - [Gimp](https://www.gimp.org/) An open source image editor that can load and save the DDS format by default.
- - [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) in combination with [this opensource plugin](http://gametechdev.github.io/Intel-Texture-Works-Plugin/) or [this commercial (but free) plugin](https://developer.nvidia.com/nvidia-texture-tools-exporter). You need a developers account for the latter.
+ - [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) In combination with [this opensource plugin](http://gametechdev.github.io/Intel-Texture-Works-Plugin/) or [this commercial (but free) plugin](https://developer.nvidia.com/nvidia-texture-tools-exporter). You need a developers account for the latter.
+ - [DDS Batch Converter](https://vvvv.org/contribution/dds-converter) A small tool that can batch-convert entire folders into the proper BC3 / DXT5 DDS format. 
 
 In general, make sure to load and save the transparency layer accordingly. Make sure you use the BC3 / DXT5 format when saving. And remember: the compression can mess with your icon. When you save the icon, close it in the editor and reload it you can inspect how it appears after compression (and how it appears in-game).
