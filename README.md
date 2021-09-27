@@ -7,10 +7,10 @@ Please use the example mods provided to help you get started for your own, perso
 ## Distribution
 
 Please note the license of the example mods:
- - BrewLAN UI Strategic Icon Overhaul Classic: The **icons** are distributed with the CC-BY-SA-NC 4.0 license. All rights reserved to Sean 'Balthazar' Wheeldon for the script.
- - BrewLAN UI Strategic Icon Overhaul Large: All rights reserved to Sean 'Balthazar' Wheeldon.
- - BrewLAN UI Strategic Icon Overhaul Small: All rights reserved to Sean 'Balthazar' Wheeldon.
- - Backwards Compatible Icon Overhaul: All the code has the GPLv3 license, the four example icons belong to the author of ASI.
+ - `BrewLAN UI Strategic Icon Overhaul Classic`: The **icons** are distributed with the CC-BY-SA-NC 4.0 license. All rights reserved to Sean 'Balthazar' Wheeldon for the script.
+ - `BrewLAN UI Strategic Icon Overhaul Large`: All rights reserved to Sean 'Balthazar' Wheeldon.
+ - `BrewLAN UI Strategic Icon Overhaul Small`: All rights reserved to Sean 'Balthazar' Wheeldon.
+ - `Backwards Compatible Icon Overhaul`: All the code has the GPLv3 license, the four example icons belong to the author of ASI.
 
 Distributing adjusted icon packages through the vault is not permitted unless you have explicit authorisation by the right holder. You're free to use and adjust them for your own, personal use.
 
@@ -21,10 +21,10 @@ All icons should be stored in the BC3 / DXT5 DDS format. This is an abbreviation
 The DDS format we use (BC3 / DXT5) is a compressed format for textures. This compression is not lossless and therefore it involves losing information while saving. It is therefore recommend you work on your icons in some other format, such as PNG, and convert them to the DDS format to preserve the original texture for editing. Using DXT5 has a limitation. Each block of 4x4 textures needs to have the same color and saturation in each pixel. If this is not the case, it will average it out during saving. This means that pixels in such a block can have different luminance (lighting, black / white) but they must be the same color (Hue) and saturation. This means you can't just make any icon and have it look good in-game. It requires a bit of trial-and-error to get a feeling for. We therefore recommend that you first experiment with what is possible, before making all your icons.
 
 A unit requires four states:
- - `over`, as an example: `icon_air_air_over.dds`
- - rest, as an example: `icon_air_air_rest.dds`
- - `selected`, as an example: `icon_air_air_selected.dds`
- - `selectedover`, as an example: `icon_air_air_selectedover.dds`
+ - `over`: As an example - `icon_air_air_over.dds`
+ - rest: As an example - `icon_air_air_rest.dds`
+ - `selected`: As an example - `icon_air_air_selected.dds`
+ - `selectedover`: As an example - `icon_air_air_selectedover.dds`
 
 The game expects all four to be availabe or it will not show an icon when a given state is reached. In particular, use the `Backwards Compatible Icon Overhaul` mod if you want to convert your Advanced Strategic Icons (ASI) installation.
 
