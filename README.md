@@ -24,7 +24,7 @@ The DDS format we use (BC3 / DXT5) is a compressed format for textures. This com
 
 A unit requires four states:
  - `over`: As an example - `icon_air_air_over.dds`
- - rest: As an example - `icon_air_air_rest.dds`
+ - `rest`: As an example - `icon_air_air_rest.dds`
  - `selected`: As an example - `icon_air_air_selected.dds`
  - `selectedover`: As an example - `icon_air_air_selectedover.dds`
 
@@ -70,6 +70,8 @@ A script is case-sensitive. This means you need to have your capitals straight. 
 There are various tools out there that can help you make icons.
  - [Gimp](https://www.gimp.org/) An open source image editor that can load and save the DDS format by default.
  - [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) In combination with [this opensource plugin](http://gametechdev.github.io/Intel-Texture-Works-Plugin/) or [this commercial (but free) plugin](https://developer.nvidia.com/nvidia-texture-tools-exporter). You need a developers account for the latter.
- - [DDS Batch Converter](https://vvvv.org/contribution/dds-converter) A small tool that can batch-convert entire folders into the proper BC3 / DXT5 DDS format. 
+ - [DDS Batch Converter](https://vvvv.org/contribution/dds-converter) A small tool that can batch-convert entire folders into the proper BC3 / DXT5 DDS format. Make sure to use the following format with this tool: 
+
+![](images/tool-settings-a.png)
 
 In general, make sure to load and save the transparency layer accordingly. Make sure you use the BC3 / DXT5 format when saving. And remember: the compression can mess with your icon. When you save the icon, close it in the editor and reload it you can inspect how it appears after compression (and how it appears in-game).
