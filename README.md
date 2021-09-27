@@ -18,6 +18,16 @@ A unit requires four states:
 
 The game expects all four to be availabe or it will not show an icon when a given state is reached. In particular, use the `Backwards Compatible Icon Overhaul` mod if you want to convert your Advanced Strategic Icons (ASI) installation.
 
+## Distribution
+
+Please note the license of the example mods:
+ - BrewLAN UI Strategic Icon Overhaul Classic: The **icons** are distributed with the CC-BY-SA-NC 4.0 license. All rights reserved to Sean 'Balthazar' Wheeldon for the script.
+ - BrewLAN UI Strategic Icon Overhaul Large: All rights reserved to Sean 'Balthazar' Wheeldon.
+ - BrewLAN UI Strategic Icon Overhaul Small: All rights reserved to Sean 'Balthazar' Wheeldon.
+ - Backwards Compatible Icon Overhaul: All the code has the GPLv3 license, the four example icons belong to the author of ASI.
+
+Distributing adjusted icon packages through the vault is not permitted unless you have explicit authorisation by the right holder. You're free to use and adjust them for your own, personal use.
+
 ## About the custom-strategic-icons folder
 
 Inside this folder you'll store all your icons. The folder should be in the root of your mod. As an example:
