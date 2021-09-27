@@ -12,6 +12,7 @@ IconAssignments = { }
 function ScriptedIconAssignments (units, projectiles, icons)
 
     -- for performance
+    local StringSub = string.sub
     local StringFind = string.find
 
     -- this is where we store the results
@@ -29,7 +30,7 @@ function ScriptedIconAssignments (units, projectiles, icons)
             -- check if we have the same identifier in our icon folder
             local partOfIconsMod = false 
             for k, icon in icons do 
-                if StringFind(icon, strategicIconName, 1, -10) then 
+                if StringSub(icon, -9) == '_rest.dds' and StringFind(icon, strategicIconName, 1, -9) then 
                     partOfIconsMod = true 
                     break
                 end
