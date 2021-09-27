@@ -2,7 +2,7 @@ name = "Backwards Compatible Icon Overhaul"
 uid = "backwards-compatible-icon-overhaul-01"
 version = 1
 
-description = "This is an example mod that uses the scripted approach to be backwards compatible with the previous approach to make icons for."
+description = "This is an example mod that uses the scripted approach to be backwards compatible with the previous approach to make icons for. All code is distributed under the GPLv3 license. The example icons are part of ASI and are copyrighted by Maxareuos."
 author = "(Jip) Willem Wijnia"
 
 selectable = true

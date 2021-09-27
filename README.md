@@ -16,7 +16,7 @@ A unit requires four states:
  - `selected`, as an example: `icon_air_air_selected.dds`
  - `selectedover`, as an example: `icon_air_air_selectedover.dds`
 
-The game expects all four to be availabe or it will not show an icon when a given state is reached.
+The game expects all four to be availabe or it will not show an icon when a given state is reached. In particular, use the `Backwards Compatible Icon Overhaul` mod if you want to convert your Advanced Strategic Icons (ASI) installation.
 
 ## About the custom-strategic-icons folder
 
@@ -41,7 +41,8 @@ IconAssignments = { }
 -- functionality that is available are LOG, WARN, _ALERT, SPEW and all table, math and string operations.
 -- @param units All available unit blueprints.
 -- @param projectiles All available projectile blueprints.
-function ScriptedIconAssignments (units, projectiles)
+-- @param icons All the file names of the icons part of this mod.
+function ScriptedIconAssignments (units, projectiles, icons)
     return { }
 end
 ```

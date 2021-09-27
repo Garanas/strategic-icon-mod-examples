@@ -11,7 +11,8 @@ IconAssignments = { }
 -- functionality that is available are LOG, WARN, _ALERT, SPEW and all table, math and string operations.
 -- @param units All available unit blueprints.
 -- @param projectiles All available projectile blueprints.
-function ScriptedIconAssignments (units, projectiles)
+-- @param icons All the file names of the icons part of this mod.
+function ScriptedIconAssignments (units, projectiles, icons)
     return BrewLANTechIconOverhaul({Unit = units, Projectile = projectiles})
 end
 
