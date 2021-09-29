@@ -1,6 +1,6 @@
 
 -- we do not have any manual assignments
-IconAssignments = { }
+UnitIconAssignments = { }
 
 --- Entry point for scripted assignments. This function has a limited scope and any changes to the 
 -- units and / or the projectiles do not affect the game as they are deep-copied of the originals. The 
