@@ -27,10 +27,13 @@ function ScriptedIconAssignments (units, projectiles, icons)
         -- this can be nil
         if strategicIconName then 
 
+            -- compute this once for all icons
+            local target = "/" .. strategicIconName .. "_rest.dds"
+
             -- check if we have the same identifier in our icon folder
             local partOfIconsMod = false 
             for k, icon in icons do 
-                if StringSub(icon, -9) == '_rest.dds' and StringFind(icon, strategicIconName, 1, -9) then 
+                if StringSub(icon, -9) == '_rest.dds' and StringFind(icon, target) then 
                     partOfIconsMod = true 
                     break
                 end
