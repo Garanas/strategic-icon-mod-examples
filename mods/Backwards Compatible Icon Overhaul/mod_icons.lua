@@ -7,7 +7,7 @@ UnitIconAssignments = { }
 -- Functionality that is available:
 --  - moho-log interaction: LOG, WARN, _ALERT, SPEW, error, assert
 --  - debugging: repr
---  - compatibility: pairs, ipairs, next 
+--  - iterators: pairs, ipairs, next 
 --  - typical statements: table, math (excluding math.random), string, tonumber, type, unpack, tostring
 -- @param units All available unit blueprints.
 -- @param projectiles All available projectile blueprints.
