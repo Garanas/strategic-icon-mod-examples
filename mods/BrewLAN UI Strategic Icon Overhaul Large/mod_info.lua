@@ -3,7 +3,7 @@ uid = "brewlan-ui-strategic-icon-overhaul-large-01"
 version = 1
 
 description = "This is the large set.\r\nReassigns strategic icons based on physical properties of the units. All rights reserved to Sean 'Balthazar' Wheeldon."
-copyright = "© 2015–2021 Sean Wheeldon"
+copyright = "Copyright 2015–2021 Sean Wheeldon"
 author = "Balthazar"
 
 selectable = true
