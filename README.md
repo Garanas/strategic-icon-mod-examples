@@ -36,6 +36,8 @@ Inside this folder you'll store all your icons. The folder should be in the root
 
 ![](/images/example-a.png)
 
+For the best performance you should archive all the files inside the folder into a `.scd` before you release it. You can do this by zipping all the icons and then changing the extension. Make sure that teh icons are placed directly in the archive, there should be no additional folder inside the archive. Please see the Brewlan mods as an example.
+
 ## About mod_icons.lua
 
 Inside this file you'll define what units should have what icons. The file should be in the root of your mod. As an example:
@@ -45,12 +47,16 @@ Inside this file you'll define what units should have what icons. The file shoul
 An example of a basic file:
 
 ```lua
--- we do not have any manual assignments
-IconAssignments = { }
+-- Entry point for manual assignments
+UnitIconAssignments = { }
 
 --- Entry point for scripted assignments. This function has a limited scope and any changes to the 
--- units and / or the projectiles do not affect the game as they are deep-copied of the originals. The 
--- functionality that is available are LOG, WARN, _ALERT, SPEW and all table, math and string operations.
+-- units and / or the projectiles do not affect the game as they are deep-copied of the originals. 
+-- Functionality that is available:
+--  - moho-log interaction: LOG, WARN, _ALERT, SPEW, error, assert
+--  - debugging: repr
+--  - iterators: pairs, ipairs, next 
+--  - typical statements: table, math (excluding math.random), string, tonumber, type, unpack, tostring
 -- @param units All available unit blueprints.
 -- @param projectiles All available projectile blueprints.
 -- @param icons All the file names of the icons part of this mod.
@@ -60,7 +66,7 @@ end
 ```
 
 It contains two definitions:
- - `IconAssignments`: This is a manual approach to assigning icons to units. It requires a format such as `{ BlueprintId = "UAL0001", IconSet = "aeon_commander" }` where you have a corresponding icon set that starts with `aeon_commander` in the `custom-strategic-icons` folder. 
+ - `UnitIconAssignments`: This is a manual approach to assigning icons to units. It requires a format such as `{ BlueprintId = "UAL0001", IconSet = "aeon_commander" }` where you have a corresponding icon set that starts with `aeon_commander` in the `custom-strategic-icons` folder. 
  - `ScriptedIconAssignments`: This is a scripted approach to assigning icons to units. It should return the same format as the manual assignment. This is for advanced users. The arguments are deep copies of all unit and projectile blueprints. You can see an example of how to do this in the example icon overhaul mods of Brewlan.
 
 A script is case-sensitive. This means you need to have your capitals straight. The syntax is typical lua. This guide does not inform you how to write valid Lua code - you can find numerous resources through a search engine online.
@@ -75,3 +81,13 @@ There are various tools out there that can help you make icons.
 ![](images/tool-settings-a.png)
 
 In general, make sure to load and save the transparency layer accordingly. Make sure you use the BC3 / DXT5 format when saving. And remember: the compression can mess with your icon. When you save the icon, close it in the editor and reload it you can inspect how it appears after compression (and how it appears in-game).
+
+## Converting from the old method
+
+The previous method stored the icons at this location:
+ - `/textures/ui/common/game/strategicicons/`
+
+The new method stores the icons at this location, give that `%name%` is the name of your mod:
+ - `/textures/ui/common/game/strategicicons/%name%`
+
+In order to convert a sim mod you need to prepend the name of your mod to the `StrategicIcon` value inside the blueprints of the units and / or projectiles. For converting a previously made ui mod you can look at the Backwards Compatible Icon Overhaul mod as an example. Note that the license on the icons remain regardless of their origin, blindly uploading to the vault and violating the (copyright) rules can result in a warning or a ban.
