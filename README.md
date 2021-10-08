@@ -16,6 +16,16 @@ Please note the license of the example mods:
 
 Distributing adjusted icon packages through the vault is not permitted unless you have explicit authorisation by the right holder. You're free to use and adjust them for your own, personal use.
 
+## Converting from the previous method
+
+A short guide made by Emperor Pinguin: 
+
+ - 1. Put this [file](https://github.com/Garanas/strategic-icon-mod-examples/blob/main/mods/Backwards%20Compatible%20Icon%20Overhaul/mod_icons.lua) into your icon mod's primary folder.
+ - 2. Create a new folder named "custom-strategic-icons" inside your mod's primary folder.
+ - 3. Move all your icon images into that "custom-strategic-icons" folder (you can delete the mod's old folders that are now empty).
+
+For a complete example you can view the [Compatible Overhaul Icon Overhaul](https://github.com/Garanas/strategic-icon-mod-examples/tree/main/mods/Backwards%20Compatible%20Icon%20Overhaul) mod.
+
 ## About the format (Direct Draw Surface / DDS)
 
 All icons should be stored in the BC3 / DXT5 DDS format. This is an abbreviation for a Direct Draw Surface which is highly optimized for rendering with a GPU. In turn, you can't make icons using just paint. The game is able to transform other formats to the DDS format dynamically, but this typically looks worse than when you do it yourself.
@@ -81,13 +91,3 @@ There are various tools out there that can help you make icons.
 ![](images/tool-settings-a.png)
 
 In general, make sure to load and save the transparency layer accordingly. Make sure you use the BC3 / DXT5 format when saving. And remember: the compression can mess with your icon. When you save the icon, close it in the editor and reload it you can inspect how it appears after compression (and how it appears in-game).
-
-## Converting from the old method
-
-The previous method stored the icons at this location:
- - `/textures/ui/common/game/strategicicons/`
-
-The new method stores the icons at this location, give that `%name%` is the name of your mod:
- - `/textures/ui/common/game/strategicicons/%name%`
-
-In order to convert a sim mod you need to prepend the name of your mod to the `StrategicIcon` value inside the blueprints of the units and / or projectiles. For converting a previously made ui mod you can look at the Backwards Compatible Icon Overhaul mod as an example. Note that the license on the icons remain regardless of their origin, blindly uploading to the vault and violating the (copyright) rules can result in a warning or a ban.
